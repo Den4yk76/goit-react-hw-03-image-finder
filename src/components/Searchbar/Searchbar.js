@@ -25,6 +25,7 @@ export default class Searchbar extends Component {
           <input
             onChange={this.onChange}
             name="searh"
+            value={this.state.search}
             className="SearchForm-input"
             type="text"
             autocomplete="off"
