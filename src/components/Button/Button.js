@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class Button extends Component {
   handleClick = () => {
@@ -12,5 +13,8 @@ export default class Button extends Component {
       </button>
     );
   }
-  //   this.state.responseData.length > 0 && <Button onClick={this.onClick} />;
 }
+
+Button.propTypes = {
+  onClick: PropTypes.func,
+};

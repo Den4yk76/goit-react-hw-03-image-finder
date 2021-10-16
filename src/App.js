@@ -89,7 +89,6 @@ export default class App extends Component {
   };
 
   onModalClose = e => {
-    console.log('e', e);
     if (
       e.target.className === 'Overlay' &&
       e.currentTarget.className === 'Overlay'
