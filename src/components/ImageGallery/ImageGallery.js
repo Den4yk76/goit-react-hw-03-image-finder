@@ -15,6 +15,5 @@ export default class ImageGallery extends Component {
 }
 
 ImageGallery.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.object),
   onModalOpen: PropTypes.func,
 };

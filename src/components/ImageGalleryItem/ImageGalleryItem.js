@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class ImageGalleryItem extends Component {
   state = {
@@ -19,3 +20,7 @@ export default class ImageGalleryItem extends Component {
     });
   }
 }
+
+ImageGalleryItem.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.object),
+};
