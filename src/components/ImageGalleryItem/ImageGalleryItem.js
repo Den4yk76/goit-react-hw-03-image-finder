@@ -9,6 +9,7 @@ export default class ImageGalleryItem extends Component {
       return (
         <li key={id} className="ImageGalleryItem">
           <img
+            id={id}
             src={webformatURL}
             alt={tags}
             className="ImageGalleryItem-image"

@@ -7,8 +7,10 @@ export default class Searchbar extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-    this.props.onSubmit(this.state.search);
-    this.setState({ search: '' });
+    if (this.state.search.trim() !== '') {
+      this.props.onSubmit(this.state.search);
+      this.setState({ search: '' });
+    } else alert('Add your search query');
   };
   onChange = e => {
     this.setState({ search: e.target.value });

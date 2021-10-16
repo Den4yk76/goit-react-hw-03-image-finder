@@ -5,7 +5,7 @@ export default class ImageGallery extends Component {
   render() {
     return (
       <>
-        <ul className="ImageGallery">
+        <ul onClick={this.props.onModalOpen} className="ImageGallery">
           <ImageGalleryItem images={this.props.images} />
         </ul>
       </>
